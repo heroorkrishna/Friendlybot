@@ -51,7 +51,7 @@ def get_bot_response():
       decoded_translation=''
     else:
       stop_condition = True
-      decoded_translation = "sorry my maker is not bright enough to teach me such things or maybe you made a spelling mistake"
+      decoded_translation = "sha nu gotilla"
     while not stop_condition :
         dec_outputs , h , c = dec_model1.predict([ empty_target_seq ] + states_values )
         sampled_word_index = np.argmax( dec_outputs[0, -1, :] )
